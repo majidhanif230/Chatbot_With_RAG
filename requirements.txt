@@ -1,0 +1,9 @@
+gradio
+PyPDF2
+faiss-cpu
+numpy
+sentence-transformers
+google-generativeai
+openai
+gTTS
+SpeechRecognition
