@@ -5,33 +5,52 @@ The ChatBot leverages generative AI models along with RAG techniques to interact
 
 ## Libraries Used
 gradio
+
 PyPDF2
+
 faiss
+
 numpy
+
 sentence_transformers
+
 google.generativeai
+
 openai
+
 GTTS
+
 temp_file
+
 speech_recognition
+
 ## Workflow
 Load Model: The model is loaded using an API key.
-Read PDF: The PDF content is read and processed.
-Chunk Text: The extracted text from the PDF is divided into smaller chunks to accommodate model input token limitations and to handle large documents effectively.
-Encode Passages: The text passages are encoded into vectors using Sentence Transformers.
-Create FAISS Index: A FAISS index is created for efficient passage retrieval.
-Retrieve Passages: Based on the user's query, relevant passages are retrieved from the index.
-Generate Responses: The bot generates answers based on the retrieved passages.
-Source Mention: The bot mentions the source of its response, including the PDF name and page number.
-Host on Gradio: The application is hosted using Gradio for easy interaction.
-Requirements
 
-## Clone the Repository:
+Read PDF: The PDF content is read and processed.
+
+Chunk Text: The extracted text from the PDF is divided into smaller chunks to accommodate model input token limitations and to handle large documents effectively.
+
+Encode Passages: The text passages are encoded into vectors using Sentence Transformers.
+
+Create FAISS Index: A FAISS index is created for efficient passage retrieval.
+
+Retrieve Passages: Based on the user's query, relevant passages are retrieved from the index.
+
+Generate Responses: The bot generates answers based on the retrieved passages
+
+Source Mention: The bot mentions the source of its response, including the PDF name and page number.
+
+Host on Gradio: The application is hosted using Gradio for easy interaction.
+
+## Requirements
+
+### Clone the Repository:
 git clone https://github.com/majidhanif230/Chatbot_With_RAG
 
-## Install Dependencies:
+### Install Dependencies:
 pip install -r requirements.txt
-## Run the Notebook:
+### Run the Notebook:
 Open the Chatbot_RAG.ipynb notebook and run the cells sequentially.
 
 ## Access the ChatBot:
